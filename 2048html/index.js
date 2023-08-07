@@ -220,5 +220,3 @@ const start = new board();
 start.fillRandom();
 start.fill(twoDArray);
 document.addEventListener('keydown', (x)=> handleKeyDown(x,start));
-
-
