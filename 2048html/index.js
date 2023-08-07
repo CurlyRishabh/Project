@@ -127,9 +127,6 @@ class board{
             }
             twoDArray[i]=arr;
         }
-       
-    // 1, 2, 2,3 | 3, 2, 2, 1 
-    //            2, 2,1,   |  ,1,2,2
     }
     moveright(){
         this.mirror();
@@ -217,8 +214,6 @@ function handleKeyDown(event,game) {
         }
     }
     return;
-      
-
 }
 
 const start = new board();
