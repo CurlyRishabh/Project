@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body style="background-color: cornsilk;">
+
+    <br>
+    <div style="font-size: 40pt; justify-content: center; display: flex;padding: 10pt; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: crimson;">Score</div>
+    <div id="score" style="color: green;">0</div>
+    <div  onkeypress="handleKeyDown()">
+        <div id="row">
+            <div id="0" class="square"></div>
+            <div id="1" class="square"></div>
+            <div id="2" class="square"></div>
+            <div id="3" class="square"></div>
+        </div>
+        <div id="row">
+            <div id="4" class="square"></div>
+            <div id="5" class="square"></div>
+            <div id="6" class="square"></div>
+            <div id="7" class="square"></div>
+        </div>       
+        <div id="row">
+            <div id="8" class="square"></div>
+            <div id="9" class="square"></div>
+            <div id="10" class="square"></div>
+            <div id="11" class="square"></div>
+        </div>
+        <div id="row">
+            <div id="12" class="square"></div>
+            <div id="13" class="square"></div>
+            <div id="14" class="square"></div>
+            <div id="15" class="square"></div>
+        </div>
+    </div>
+    <div class="mode">
+        <button onclick="mode(1)" style="border: 2px solid plum; color: purple;background-color: bisque; margin: 40px; ">Pastel Mode</button>
+        <button onclick="mode(2)" style="border: 2px solid black; color: black;background-color: gray; margin: 40px;" >Monochrome Mode</button>
+    </div> 
+     
+
+    
+
+</body>
+<script src="index.js"></script>
+</html>
