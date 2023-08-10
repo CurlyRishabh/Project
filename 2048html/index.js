@@ -2,39 +2,35 @@ const rows = 4;
 const columns = 4;
 const twoDArray = [];
 let col=1;
+const pastelColors = {
+    " ":"white",
+    2: '#ffb6c1',   // Light pink
+    4: '#add8e6',   // Light blue
+    8: '#90ee90',   // Light green
+    16: '#e6e6fa',  // Lavender
+    32: '#ffdab9',  // Peach
+    64: '#f5fffa',  // Mint
+    128: '#ff7f50', // Coral
+    256: '#87cefa', // Sky blue
+    512: '#e6e6fa', // Lilac
+    1024: '#ffffe0', // Pale yellow
+    2048: '#ffd700'  // Gold
+};
+const monochromeColors = {
+    " ":"white",
+    2: '#d3d3d3',    // Light gray
+    4: '#a9a9a9',    // Dark gray
+    8: '#696969',    // Dim gray
+    16: '#808080',   // Gray
+    32: '#c0c0c0',   // Silver
+    64: '#778899',   // Light slate gray
+    128: '#708090',  // Slate gray
+    256: '#2f4f4f',  // Dark slate gray
+    512: '#000000',  // Black
+    1024: '#ffffff', // White
+    2048: '#ffd700'  // Gold
+};
 
-function mode(x){
-    const pastelColors = {
-        " ":"white",
-        2: '#ffb6c1',   // Light pink
-        4: '#add8e6',   // Light blue
-        8: '#90ee90',   // Light green
-        16: '#e6e6fa',  // Lavender
-        32: '#ffdab9',  // Peach
-        64: '#f5fffa',  // Mint
-        128: '#ff7f50', // Coral
-        256: '#87cefa', // Sky blue
-        512: '#e6e6fa', // Lilac
-        1024: '#ffffe0', // Pale yellow
-        2048: '#ffd700'  // Gold
-    };
-    const monochromeColors = {
-        " ":"white",
-        2: '#d3d3d3',    // Light gray
-        4: '#a9a9a9',    // Dark gray
-        8: '#696969',    // Dim gray
-        16: '#808080',   // Gray
-        32: '#c0c0c0',   // Silver
-        64: '#778899',   // Light slate gray
-        128: '#708090',  // Slate gray
-        256: '#2f4f4f',  // Dark slate gray
-        512: '#000000',  // Black
-        1024: '#ffffff', // White
-        2048: '#ffd700'  // Gold
-    };
-    col = x==1?col=pastelColors:col=monochromeColors;
-    game.fill();
-}
 for (let i = 0; i < rows; i++) {
   twoDArray.push(new Array(columns).fill(" "));
 }
@@ -50,6 +46,11 @@ class board{
             return score;
         } 
     }
+
+    color(x){
+        col = x==1?col=pastelColors:col=monochromeColors;
+    }
+
     fill(){
         let no=0;
         for(let i=0;i<4;i++)
@@ -217,6 +218,10 @@ function handleKeyDown(event,game) {
 }
 
 const start = new board();
+function mode(x){
+    start.color(x);
+    start.fill()
+}
 start.fillRandom();
 start.fill(twoDArray);
 document.addEventListener('keydown', (x)=> handleKeyDown(x,start));
