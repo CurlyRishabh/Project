@@ -1,0 +1,129 @@
+body{
+  background-color:aliceblue;
+}
+.main{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.header{
+  grid-column: span 2;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 60px;
+  font-weight:bold;
+  color:darkorange;
+  padding-bottom: 5%;
+}
+.search{
+  margin-top: 5%;
+  
+  position: relative;
+  padding-bottom: 5%;
+}
+input{
+  background-color:lightcyan;
+  border-color: aquamarine;
+}
+
+.mainTable{
+  grid-column: span 2;
+}
+
+
+.sideTable{
+  grid-row: span 2;
+  margin-left: 30%;
+}
+input{
+  width: 200px;
+}
+input:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,.3);
+}
+
+
+
+.dropdown {
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  max-height: 150px;
+  width: 200px;
+  overflow-y: auto;
+  background-color: white;
+  position:absolute;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  font-family:'Courier New', Courier, monospace;
+  font-size: small;
+  background-color: azure;
+}
+
+.dropdown li:hover {
+  background-color:aliceblue;
+}
+
+.dropdown-image{
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+}
+button{
+  color: aquamarine;
+  font-size: small;
+  
+  background-color: deepskyblue;
+  cursor: pointer;
+  margin-right: 30px;
+  margin-top: 15px;
+}
+button:hover{
+  color: black;
+}
+.coinImage{
+   height: 30px;
+    width: 30px;
+    
+}
+.detailImage{
+   height: 100px;
+    width: 100px;
+    margin-right: 10px;
+}
+.coinDetail{
+  font-family: sans-serif;
+}
+.coinImgName{
+  display: flex;
+  align-items: center;
+  font-size: large;
+  color:darkslategrey;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+table {
+  border-spacing: 0px ;
+}
+tbody{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: small;
+  cursor: pointer;  
+  
+  
+}
+
+
+thead {
+    background-color: #70c2db; /* Set your desired color here */
+    color: #333; /* Text color */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+    
+  }
+
+
+
