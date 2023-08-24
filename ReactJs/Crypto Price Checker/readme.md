@@ -1,6 +1,6 @@
 # Crypto Checker App
 
-![UI Images](/UI_Images/MainUI.jpg)
+![UI Images](UI_Images/MainUI.jpg)
 
 ## Introduction
 
