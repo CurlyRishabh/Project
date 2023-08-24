@@ -1,6 +1,12 @@
 # Crypto Checker App
 
+##Main UI
 ![MainUI](https://github.com/CurlyRishabh/Project/assets/60700573/fe897012-42ad-4f6b-8c50-910fb638c839)
+##On Click from table
+![onClickingCoin](https://github.com/CurlyRishabh/Project/assets/60700573/c7bb75ef-7aa4-420f-b7fd-219c308270c3)
+
+##Search Bar
+![onSearchingFromSearchbar](https://github.com/CurlyRishabh/Project/assets/60700573/563e6651-9e52-4505-9280-818ed06cbc44)
 
 ## Introduction
 
