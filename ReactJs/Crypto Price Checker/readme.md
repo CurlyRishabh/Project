@@ -1,6 +1,6 @@
 # Crypto Checker App
 
-![UI Images](UI_Images/MainUI.jpg)
+![MainUI](https://github.com/CurlyRishabh/Project/assets/60700573/fe897012-42ad-4f6b-8c50-910fb638c839)
 
 ## Introduction
 
