@@ -9,6 +9,10 @@
 ## Search Bar
 ![onSearchingFromSearchbar](https://github.com/CurlyRishabh/Project/assets/60700573/563e6651-9e52-4505-9280-818ed06cbc44)
 
+## Graph
+![grpah](https://github.com/CurlyRishabh/Project/assets/60700573/5e27dee3-e909-4246-acc3-d3d2d5003e2c)
+
+
 ## Introduction
 
 The Crypto Checker App is a powerful and user-friendly tool designed to provide real-time price information for the top 250 cryptocurrency coins. This repository contains the final UI images of the app, showcasing its visual design and features.
