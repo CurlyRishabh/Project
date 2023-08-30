@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-// import coin from './bitcoin.json';
+import LineChart from './LineChart';
 
 
 function Detail(props){
@@ -50,17 +50,22 @@ function Details(props){
 
     },[props.x]);
     return (
-		<Detail
-			name={coin.name}
-			image={coin.image}
-			volume={(coin.total_volume / 1e6).toFixed(2)}
-			mcap={(coin.market_cap / 1e6).toFixed(2)}
-			change={parseFloat(coin.price_change_percentage_24h).toFixed(2)}
-			price={coin.current_price}
-			symbol={coin.symbol}
-			low={coin.low_24h}
-			high={coin.high_24h}
-		/>
+		<div>
+			<Detail
+				name={coin.name}
+				image={coin.image}
+				volume={(coin.total_volume / 1e6).toFixed(2)}
+				mcap={(coin.market_cap / 1e6).toFixed(2)}
+				change={parseFloat(coin.price_change_percentage_24h).toFixed(2)}
+				price={coin.current_price}
+				symbol={coin.symbol}
+				low={coin.low_24h}
+				high={coin.high_24h}
+			/>
+			<div className='Chart'>
+				<LineChart id={coin.id} />
+			</div>
+		</div>
 	);
 
 }
